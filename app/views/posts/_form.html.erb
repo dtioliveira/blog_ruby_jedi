@@ -1,0 +1,15 @@
+<%= simple_form_for @post do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.label :title %><br>
+  <%= f.input :title, label: false %><br>
+
+  <br>
+
+  <%= f.label :body %><br>
+  <%= f.input :body, label: false, rows: 20 %><br>
+
+  <br>
+
+  <%= f.button :submit %>
+<% end %>
